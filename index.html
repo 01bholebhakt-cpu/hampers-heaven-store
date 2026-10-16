@@ -4,84 +4,147 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Hampers Heaven | Gifts Made Special</title>
-<meta name="description" content="Discover beautiful gift hampers, bouquets and personalized gifts for every special moment.">
+<meta name="theme-color" content="#fff8f5">
+<title>Hampers Heaven | Gifts That Speak Your Heart</title>
 <style>
-*{box-sizing:border-box;margin:0;padding:0}
-body{font-family:Arial,sans-serif;background:#fffaf7;color:#352523}
-a{text-decoration:none;color:inherit}
-header{padding:20px 6%;display:flex;align-items:center;justify-content:space-between;background:#fff;border-bottom:1px solid #f0e5df}
-.logo{font-family:Georgia,serif;font-size:25px;font-weight:bold;color:#8c4359}
-.logo small{display:block;text-align:center;font:10px Arial;letter-spacing:4px;color:#9a817d}
-nav{display:flex;gap:22px;font-size:14px}
-.cart{border:1px solid #e6c9cf;border-radius:25px;padding:9px 14px;color:#8c4359}
-.hero{padding:65px 6%;display:grid;grid-template-columns:1fr 1fr;gap:35px;align-items:center;background:linear-gradient(120deg,#fff1f1,#fffaf5)}
-.eyebrow{font-size:11px;letter-spacing:3px;text-transform:uppercase;color:#a45c70}
-h1{font:clamp(38px,5vw,64px)/1.08 Georgia,serif;margin:18px 0}
-h1 em{color:#a45c70;font-weight:normal}
-p{line-height:1.8;color:#786864}
-.btn{display:inline-block;background:#8c4359;color:white;padding:14px 23px;border-radius:4px;margin-top:22px;font-size:14px}
-.hero img{width:100%;height:360px;object-fit:cover;border-radius:48% 48% 5px 5px}
-section{padding:55px 6%}
-.heading{text-align:center;margin-bottom:30px}
-h2{font:36px Georgia,serif;margin:10px 0}
-.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
-.product{background:white;border:1px solid #f0e6e1;padding:10px;border-radius:8px}
-.product img{width:100%;height:200px;object-fit:cover;border-radius:5px}
-.product h3{font:19px Georgia,serif;margin:12px 0 5px}
-.price{color:#8c4359;font-weight:bold;margin-top:8px}
-.product button{width:100%;border:1px solid #8c4359;color:#8c4359;background:white;padding:10px;margin-top:12px;cursor:pointer;border-radius:4px}
-.custom{background:#f8e9e8;text-align:center}
-footer{text-align:center;padding:28px;background:#352523;color:#fff;font-size:13px}
-#cart{background:white;padding:20px;margin:25px 6%;border:1px solid #ead8d1;border-radius:8px;display:none}
-@media(max-width:700px){nav{gap:10px;font-size:12px}.logo{font-size:20px}.hero{grid-template-columns:1fr;padding-top:40px}.hero img{height:270px}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.product img{height:150px}h2{font-size:30px}}
+:root{--pink:#ad2948;--ink:#35201f;--cream:#fff8f5;--muted:#8b7774;--line:#f0dfd9}
+*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,sans-serif}button,input,textarea,select{font:inherit}button,a{cursor:pointer}a{color:inherit;text-decoration:none}button{transition:.2s}button:hover,.btn:hover{opacity:.85;transform:translateY(-1px)}img{display:block;width:100%;object-fit:cover}header{position:sticky;top:0;z-index:5;background:#fffdfb;border-bottom:1px solid var(--line)}.nav{max-width:1200px;margin:auto;padding:15px 22px;display:flex;align-items:center;justify-content:space-between;gap:16px}.brand{font:26px Georgia,serif;color:var(--pink)}.brand small{display:block;text-align:center;font:9px Arial;letter-spacing:3px;color:#9b8178;margin-top:3px}.navlinks{display:flex;gap:22px;font-size:13px}.cartbtn,.outline{background:white;border:1px solid #e5b9c2;color:var(--pink);padding:11px 15px;border-radius:7px}.hero{max-width:1200px;margin:auto;padding:24px 22px 30px}.heroinner{display:grid;grid-template-columns:1fr 1fr;background:#f9e4e1;min-height:400px;overflow:hidden;border-radius:12px}.herotext{padding:clamp(26px,5vw,65px);display:flex;flex-direction:column;justify-content:center}.eyebrow{font-size:10px;letter-spacing:2px;color:var(--pink);font-weight:bold;text-transform:uppercase}.hero h1{font:clamp(39px,5vw,66px)/1.04 Georgia,serif;letter-spacing:-1.5px;margin:20px 0 15px}.hero h1 em{color:var(--pink);font-weight:normal}.hero p{color:#715956;line-height:1.8;max-width:440px}.heroimg{height:100%;min-height:400px;object-fit:cover}.btn{display:inline-block;background:var(--pink);color:white;border:0;padding:14px 20px;border-radius:6px;font-size:13px;font-weight:bold;text-align:center}.hero .btn{align-self:flex-start;margin-top:12px}.benefits{max-width:1156px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);padding:24px 20px;border-bottom:1px solid var(--line);text-align:center;gap:12px}.benefit{font-size:12px;line-height:1.6}.benefit b{display:block;font-size:23px;color:var(--pink);margin-bottom:5px}.section{max-width:1200px;margin:auto;padding:52px 22px}.sectionhead{text-align:center;margin-bottom:25px}.sectionhead h2,.custom h2{font:clamp(29px,4vw,40px) Georgia,serif;margin:10px 0}.sectionhead p{color:var(--muted);font-size:13px}.categories{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.cat{border:0;background:transparent;text-align:center;color:var(--ink);padding:0}.cat img{height:155px;border-radius:8px}.cat b{display:block;margin-top:10px;font:17px Georgia,serif}.cat.active b{color:var(--pink)}.tools{display:flex;justify-content:space-between;gap:12px;align-items:center;margin:30px 0 18px;flex-wrap:wrap}.filters{display:flex;gap:7px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:white;color:#6f5552;padding:9px 12px;border-radius:20px;font-size:12px}.filter.active{background:var(--pink);color:white;border-color:var(--pink)}.search{border:1px solid var(--line);background:white;padding:11px 13px;border-radius:7px;max-width:220px;width:100%;outline-color:var(--pink)}.products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:17px}.product{background:white;border:1px solid var(--line);border-radius:9px;overflow:hidden;min-width:0}.photo{position:relative}.photo img{height:230px}.heart{position:absolute;right:10px;top:10px;border:0;border-radius:50%;background:#fff;color:var(--pink);width:34px;height:34px;font-size:18px}.tag{position:absolute;left:9px;top:10px;background:#fff0f0;color:var(--pink);padding:6px 8px;border-radius:4px;font-size:10px}.pbody{padding:13px}.pbody h3{font:18px Georgia,serif;margin:0 0 8px}.desc{font-size:11px;color:var(--muted);line-height:1.6;min-height:34px}.prices{margin:10px 0}.price{color:var(--pink);font-weight:bold;font-size:17px}.old{font-size:11px;color:#a99b98;text-decoration:line-through;margin-left:6px}.pbuttons{display:grid;grid-template-columns:1fr 1fr;gap:7px}.pbuttons button{padding:10px 5px;font-size:11px;border-radius:5px}.add{background:var(--pink);color:white;border:1px solid var(--pink)}.details{background:white;color:var(--pink);border:1px solid #e5b9c2}.custom{background:#f8e6e3;padding:40px 20px;text-align:center}.custom p{color:#765b57;font-size:13px}.custom input{padding:12px;border:1px solid #e6c8c1;border-radius:6px;margin:8px;width:min(260px,90%)}.footer{padding:30px 20px;background:#3b2525;color:#fff;text-align:center;font-size:12px}.footer p{color:#d6c4c0}.overlay{position:fixed;inset:0;z-index:20;background:#26181799;display:none;align-items:center;justify-content:center;padding:15px}.overlay.open{display:flex}.modal{background:var(--cream);border-radius:12px;width:min(700px,100%);max-height:92vh;overflow:auto;padding:22px;position:relative}.close{float:right;border:0;background:transparent;font-size:26px;color:var(--pink)}.modal h2{font:29px Georgia,serif;margin:10px 0 18px}.productdetail{display:grid;grid-template-columns:1fr 1fr;gap:22px}.productdetail img{height:300px;border-radius:8px}.productdetail p{color:var(--muted);font-size:13px;line-height:1.7}.field{display:block;margin:12px 0;font-size:12px;color:#684f4a}.field input,.field select,.field textarea{display:block;width:100%;margin-top:6px;padding:12px;border:1px solid var(--line);border-radius:6px;background:white;color:var(--ink)}.field textarea{min-height:75px;resize:vertical}.qty{display:flex;align-items:center;gap:12px;margin:14px 0}.qty button{border:1px solid var(--line);background:white;border-radius:5px;width:32px;height:32px}.cartrow{display:grid;grid-template-columns:65px 1fr auto;gap:12px;align-items:center;padding:13px 0;border-bottom:1px solid var(--line)}.cartrow img{height:65px;border-radius:5px}.cartrow h4{margin:0 0 6px;font:16px Georgia,serif}.cartrow p{margin:0;font-size:12px;color:var(--muted)}.remove{border:0;background:transparent;color:var(--pink);font-size:12px;margin-top:6px}.summary{padding:17px 0;display:flex;justify-content:space-between;font-weight:bold}.empty{text-align:center;padding:28px;color:var(--muted)}.notice{font-size:11px;color:var(--muted);line-height:1.6;margin-top:12px}.wide{width:100%;margin-top:10px}.hidden{display:none!important}
+@media(max-width:750px){.nav{padding:12px}.brand{font-size:21px}.navlinks{gap:10px;font-size:11px}.navlinks a:nth-child(2){display:none}.cartbtn{padding:9px;font-size:12px}.hero{padding:12px}.heroinner{grid-template-columns:1fr}.herotext{padding:28px 24px}.heroimg{min-height:240px;height:240px;grid-row:1}.hero h1{font-size:46px;margin:13px 0}.benefits{grid-template-columns:repeat(2,1fr);padding:20px 10px}.section{padding:37px 13px}.categories{grid-template-columns:repeat(2,1fr);gap:14px}.cat img{height:140px}.products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.photo img{height:175px}.pbody{padding:10px}.pbody h3{font-size:16px}.pbuttons{grid-template-columns:1fr}.productdetail{grid-template-columns:1fr}.productdetail img{height:230px}.modal{padding:17px}.sectionhead h2{font-size:32px}}
 </style>
 </head>
 <body>
-<header>
-<a class="logo" href="#">Hampers Heaven<small>GIFTS WITH LOVE</small></a>
-<nav><a href="#shop">Shop</a><a href="#custom">Personalize</a><a href="#contact">Contact</a></nav>
-<a class="cart" href="#cart">Bag (<span id="count">0</span>)</a>
-</header>
+<header><div class="nav">
+<a href="#" class="brand">♧ Hampers Heaven<small>GIFTS THAT SPEAK YOUR HEART</small></a>
+<nav class="navlinks"><a href="#shop">Shop</a><a href="#personalize">Personalize</a><a href="#footer">Contact</a></nav>
+<button class="cartbtn" onclick="openCart()">♡ Bag (<span id="bagcount">0</span>)</button>
+</div></header>
 
 <main>
-<div class="hero">
-<div><span class="eyebrow">Make every moment memorable</span>
-<h1>Gifts that speak<br><em>from the heart.</em></h1>
-<p>Thoughtfully curated hampers, beautiful bouquets and little surprises for the people who mean the most.</p>
-<a class="btn" href="#shop">Explore the Collection ↗</a></div>
-<img src="https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=900&q=85" alt="Elegant wrapped gift boxes">
+<div class="hero"><div class="heroinner">
+<div class="herotext"><span class="eyebrow">Thoughtful gifts, unforgettable moments</span>
+<h1>Make Every<br>Moment <em>Special.</em></h1>
+<p>Beautiful hampers, charming bouquets and personalized surprises — curated to make the people you love feel extraordinary.</p>
+<a class="btn" href="#shop">Explore Gifts &nbsp; →</a></div>
+<img class="heroimg" src="https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=1100&q=85" alt="Beautifully wrapped gifts">
+</div></div>
+
+<div class="benefits">
+<div class="benefit"><b>♡</b>Thoughtfully Curated Gifts</div>
+<div class="benefit"><b>♧</b>Personalization Available</div>
+<div class="benefit"><b>✧</b>Made for Every Occasion</div>
+<div class="benefit"><b>♡</b>Order with Ease</div>
 </div>
 
-<section id="shop">
-<div class="heading"><span class="eyebrow">Made for your moments</span><h2>Find the perfect gift</h2><p>Little details. Beautiful surprises. Unforgettable smiles.</p></div>
-<div class="grid" id="products"></div>
+<section class="section" id="shop">
+<div class="sectionhead"><span class="eyebrow">Find something lovely</span><h2>Shop by Category</h2><p>There's a little something for every special moment.</p></div>
+<div class="categories">
+<button class="cat" onclick="filterCat('Bouquets')"><img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=500&q=80" alt="Bouquets"><b>Rose Bouquets</b></button>
+<button class="cat" onclick="filterCat('Hampers')"><img src="https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=500&q=80" alt="Gift hampers"><b>Gift Hampers</b></button>
+<button class="cat" onclick="filterCat('Chocolates')"><img src="https://images.unsplash.com/photo-1548907040-4d42c9a9c6f8?auto=format&fit=crop&w=500&q=80" alt="Chocolates"><b>Chocolates</b></button>
+<button class="cat" onclick="filterCat('Personalized')"><img src="https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&w=500&q=80" alt="Personalized gifts"><b>Personalized Gifts</b></button>
+</div>
+
+<div class="tools"><div class="filters">
+<button class="filter active" onclick="filterCat('All',this)">All Gifts</button>
+<button class="filter" onclick="filterCat('Bouquets',this)">Bouquets</button>
+<button class="filter" onclick="filterCat('Hampers',this)">Hampers</button>
+<button class="filter" onclick="filterCat('Chocolates',this)">Chocolates</button>
+<button class="filter" onclick="filterCat('Personalized',this)">Personalized</button>
+</div><input id="search" class="search" placeholder="Search gifts..." oninput="renderProducts()"></div>
+<div class="products" id="products"></div>
 </section>
 
-<section class="custom" id="custom">
-<span class="eyebrow">Make it personal</span><h2>A gift that feels like them.</h2>
-<p>Add a personal touch with a special message for someone you love.</p>
-<a class="btn" href="#contact">Create Your Gift</a>
-</section>
-
-<div id="cart"><h2>Your Gift Bag</h2><div id="items"></div><p id="total"></p><a class="btn" id="order" href="#">Order on WhatsApp ↗</a></div>
-
-<section id="contact" class="heading"><span class="eyebrow">We'd love to help</span><h2>Make someone's day.</h2><p>Message us to ask about products, customization and delivery.</p><a class="btn" id="contactbtn" href="#">Chat with us on WhatsApp</a></section>
+<section class="custom" id="personalize"><span class="eyebrow">A personal touch</span><h2>Make It Meaningful.</h2><p>Add a name, a heartfelt message or a special request to your gift.</p>
+<input id="custommessage" placeholder="e.g. Happy Birthday, Riya!"><br><button class="btn" onclick="customize()">Personalize My Gift →</button></section>
 </main>
-<footer>Hampers Heaven · Gifts made special with love</footer>
+
+<footer class="footer" id="footer"><div class="brand" style="color:#ffdce4">Hampers Heaven</div><p>Thoughtful gifts for life's lovely moments.</p><p>Questions or custom requests? Place an order or message us on WhatsApp.</p><small>Demo store concept · Product details, prices and availability need confirmation.</small></footer>
+
+<div class="overlay" id="detailmodal" onclick="outsideClose(event,'detailmodal')"><div class="modal"><button class="close" onclick="closeModal('detailmodal')">×</button><div id="detailcontent"></div></div></div>
+<div class="overlay" id="cartmodal" onclick="outsideClose(event,'cartmodal')"><div class="modal"><button class="close" onclick="closeModal('cartmodal')">×</button><h2>Your Gift Bag</h2><div id="cartcontent"></div></div></div>
+<div class="overlay" id="checkoutmodal" onclick="outsideClose(event,'checkoutmodal')"><div class="modal"><button class="close" onclick="closeModal('checkoutmodal')">×</button><h2>Delivery Details</h2><p style="font-size:12px;color:#8b7774">Tell us where to deliver your surprise.</p>
+<form id="checkoutform">
+<label class="field">Full name<input required name="name" placeholder="Your name"></label>
+<label class="field">Phone number<input required name="phone" type="tel" pattern="[0-9+ ()-]{8,18}" placeholder="Your contact number"></label>
+<label class="field">Delivery address<textarea required name="address" placeholder="House, street, city, pincode"></textarea></label>
+<label class="field">Preferred delivery date<input required name="date" type="date" id="deliverydate"></label>
+<label class="field">Gift message (optional)<textarea name="message" placeholder="Write a note for the recipient"></textarea></label>
+<label class="field">Payment preference<select name="payment"><option>Confirm payment options on WhatsApp</option><option>Cash on delivery (if available)</option><option>Online payment (confirmation required)</option></select></label>
+<div id="checkoutsummary"></div>
+<button class="btn wide" type="submit">Send Order on WhatsApp →</button>
+<p class="notice">This demo sends the order details to WhatsApp. It does not collect payment or confirm delivery. Replace the demo contact number before using it with customers.</p>
+</form></div></div>
 
 <script>
+const STORE_PHONE="91YOURNUMBER";
 const products=[
-{name:"Blush Celebration Hamper",price:1499,img:"https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=600&q=80"},
-{name:"Sweet Moments Box",price:999,img:"https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=600&q=80"},
-{name:"Blooming Love Bouquet",price:799,img:"https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=600&q=80"},
-{name:"Luxury Surprise Box",price:1999,img:"https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&w=600&q=80"}
+{id:1,name:"10 Red Roses Bouquet",cat:"Bouquets",price:549,old:699,tag:"Bestseller",img:"https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=700&q=85",desc:"A timeless bouquet for love, celebrations and unforgettable surprises."},
+{id:2,name:"Love Hamper Box",cat:"Hampers",price:1299,old:1599,tag:"Popular",img:"https://images.unsplash.com/photo-1549465220-1a8b9238cd48?auto=format&fit=crop&w=700&q=85",desc:"A thoughtful gift box for birthdays, anniversaries and special moments."},
+{id:3,name:"Pink Tulip Bouquet",cat:"Bouquets",price:899,old:1099,tag:"Lovely pick",img:"https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=700&q=85",desc:"Soft, elegant blooms to brighten someone's special day."},
+{id:4,name:"Chocolate Treat Box",cat:"Chocolates",price:699,old:849,tag:"Sweet gift",img:"https://images.unsplash.com/photo-1548907040-4d42c9a9c6f8?auto=format&fit=crop&w=700&q=85",desc:"A sweet surprise for anyone who deserves a little extra love."},
+{id:5,name:"Birthday Surprise Hamper",cat:"Hampers",price:1599,old:1899,tag:"Celebrate",img:"https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&w=700&q=85",desc:"A celebratory gift concept with room for your personal message."},
+{id:6,name:"Personalized Gift Box",cat:"Personalized",price:999,old:1199,tag:"Make it yours",img:"https://images.unsplash.com/photo-1512909006721-3d6018887383?auto=format&fit=crop&w=700&q=85",desc:"Add a custom message to make the gift feel uniquely yours."},
+{id:7,name:"Blush Rose Bouquet",cat:"Bouquets",price:749,old:899,tag:"Elegant",img:"https://images.unsplash.com/photo-1561181286-d3fee7d55364?auto=format&fit=crop&w=700&q=85",desc:"A graceful bouquet for a heartfelt gesture."},
+{id:8,name:"Sweet Celebration Box",cat:"Chocolates",price:1199,old:1399,tag:"Sweet surprise",img:"https://images.unsplash.com/photo-1549007994-cb92caebd54b?auto=format&fit=crop&w=700&q=85",desc:"A celebratory treat box for someone special."}
 ];
-let bag=[];
-document.getElementById("products").innerHTML=products.map((p,i)=>`<article class="product"><img src="${p.img}" alt="${p.name}"><h3>${p.name}</h3><p>Beautifully presented, ready to gift.</p><div class="price">₹${p.price.toLocaleString("en-IN")}</div><button onclick="add(${i})">Add to bag +</button></article>`).join("");
-function add(i){bag.push(products[i]);document.getElementById("count").textContent=bag.length;document.getElementById("cart").style.display="block";document.getElementById("items").innerHTML=bag.map(p=>`<p>${p.name} — ₹${p.price}</p>`).join("");document.getElementById("total").textContent="Total: ₹"+bag.reduce((s,p)=>s+p.price,0).toLocaleString("en-IN");document.getElementById("order").href=wa("Hi! I'd like to order:\n"+bag.map(p=>p.name+" — ₹"+p.price).join("\n")+"\nTotal: ₹"+bag.reduce((s,p)=>s+p.price,0));}
-function wa(msg){return "https://wa.me/91YOURNUMBER?text="+encodeURIComponent(msg)}
-document.getElementById("contactbtn").href=wa("Hi Hampers Heaven! I'd like to know more about your gifts.");
+let bag=[],activeCategory="All",selectedProduct=null,selectedQty=1;
+const money=n=>"₹"+n.toLocaleString("en-IN");
+function waUrl(text){return "https://wa.me/"+STORE_PHONE+"?text="+encodeURIComponent(text)}
+function renderProducts(){
+const q=document.getElementById("search").value.toLowerCase();
+const list=products.filter(p=>(activeCategory==="All"||p.cat===activeCategory)&&(p.name+" "+p.cat+" "+p.desc).toLowerCase().includes(q));
+document.getElementById("products").innerHTML=list.length?list.map(p=>`<article class="product"><div class="photo"><img loading="lazy" src="${p.img}" alt="${p.name}"><span class="tag">${p.tag}</span><button class="heart" onclick="quickAdd(${p.id})" aria-label="Add to bag">♡</button></div><div class="pbody"><h3>${p.name}</h3><div class="desc">${p.desc}</div><div class="prices"><span class="price">${money(p.price)}</span> <span class="old">${money(p.old)}</span></div><div class="pbuttons"><button class="add" onclick="quickAdd(${p.id})">Add to Bag +</button><button class="details" onclick="openDetail(${p.id})">Customize</button></div></div></article>`).join(""):'<p class="empty">No gifts found. Try another search.</p>';
+}
+function filterCat(cat,button){
+activeCategory=cat;
+document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.textContent.trim()===(cat==="All"?"All Gifts":cat)));
+renderProducts();
+if(button)document.getElementById("shop").scrollIntoView({behavior:"smooth"});
+}
+function quickAdd(id){const p=products.find(x=>x.id===id);bag.push({...p,qty:1,message:""});updateCount();renderCart();openCart()}
+function openDetail(id){
+selectedProduct=products.find(p=>p.id===id);selectedQty=1;
+document.getElementById("detailcontent").innerHTML=`<div class="productdetail"><img src="${selectedProduct.img}" alt="${selectedProduct.name}"><div><span class="eyebrow">${selectedProduct.cat}</span><h2>${selectedProduct.name}</h2><div class="price">${money(selectedProduct.price)} <span class="old">${money(selectedProduct.old)}</span></div><p>${selectedProduct.desc}</p><label class="field">Gift packaging<select id="pack"><option>Classic packaging</option><option>Premium gift wrap</option><option>Romantic packaging</option></select></label><label class="field">Personal message<textarea id="giftmsg" placeholder="Add a birthday wish or note"></textarea></label><div class="qty"><button onclick="changeDetailQty(-1)">−</button><span id="detailqty">1</span><button onclick="changeDetailQty(1)">+</button></div><button class="btn wide" onclick="addCustomized()">Add to Bag · <span id="detailprice">${money(selectedProduct.price)}</span></button></div></div>`;
+document.getElementById("detailmodal").classList.add("open");
+}
+function changeDetailQty(d){selectedQty=Math.max(1,Math.min(20,selectedQty+d));document.getElementById("detailqty").textContent=selectedQty;document.getElementById("detailprice").textContent=money(selectedProduct.price*selectedQty)}
+function addCustomized(){bag.push({...selectedProduct,qty:selectedQty,message:document.getElementById("giftmsg").value,pack:document.getElementById("pack").value});updateCount();renderCart();closeModal("detailmodal");openCart()}
+function updateCount(){document.getElementById("bagcount").textContent=bag.reduce((s,p)=>s+p.qty,0)}
+function total(){return bag.reduce((s,p)=>s+p.price*p.qty,0)}
+function renderCart(){
+const el=document.getElementById("cartcontent");
+if(!bag.length){el.innerHTML='<div class="empty">Your bag is waiting for something lovely. ♡<br><button class="btn" style="margin-top:16px" onclick="closeModal(\'cartmodal\');document.getElementById(\'shop\').scrollIntoView()">Explore gifts</button></div>';return}
+el.innerHTML=bag.map((p,i)=>`<div class="cartrow"><img src="${p.img}" alt=""><div><h4>${p.name}</h4><p>${money(p.price)} each · ${p.pack||"Classic packaging"}</p><button class="remove" onclick="removeItem(${i})">Remove</button></div><div><b>${money(p.price*p.qty)}</b><div class="qty"><button onclick="changeCartQty(${i},-1)">−</button><span>${p.qty}</span><button onclick="changeCartQty(${i},1)">+</button></div></div></div>`).join("")+`<div class="summary"><span>Total</span><span>${money(total())}</span></div><button class="btn wide" onclick="startCheckout()">Continue to Checkout →</button><p class="notice">Delivery charges and final availability will be confirmed before the order is accepted.</p>`;
+}
+function openCart(){renderCart();document.getElementById("cartmodal").classList.add("open")}
+function removeItem(i){bag.splice(i,1);updateCount();renderCart()}
+function changeCartQty(i,d){bag[i].qty=Math.max(1,Math.min(20,bag[i].qty+d));updateCount();renderCart()}
+function startCheckout(){
+if(!bag.length)return;
+closeModal("cartmodal");
+document.getElementById("checkoutsummary").innerHTML='<div class="summary"><span>Order total</span><span>'+money(total())+'</span></div>';
+document.getElementById("checkoutmodal").classList.add("open");
+}
+function customize(){
+const message=document.getElementById("custommessage").value;
+if(!message.trim()){document.getElementById("custommessage").focus();return}
+bag.push({id:999,name:"Personalized Gift Request",price:0,qty:1,cat:"Personalized",img:products[5].img,desc:"Custom request",message:message,pack:"To be discussed"});
+updateCount();renderCart();openCart();
+}
+function closeModal(id){document.getElementById(id).classList.remove("open")}
+function outsideClose(e,id){if(e.target.id===id)closeModal(id)}
+document.addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelectorAll(".overlay.open").forEach(el=>el.classList.remove("open"))});
+document.getElementById("checkoutform").addEventListener("submit",e=>{
+e.preventDefault();
+if(!bag.length){alert("Your bag is empty.");return}
+const f=new FormData(e.target);
+const lines=bag.map(p=>`${p.name} x ${p.qty} — ${money(p.price*p.qty)}${p.message?" | Message: "+p.message:""}${p.pack?" | "+p.pack:""}`).join("\n");
+const text=`Hello Hampers Heaven! I'd like to place an order:\n\n${lines}\n\nTotal: ${money(total())}\n\nCustomer: ${f.get("name")}\nPhone: ${f.get("phone")}\nAddress: ${f.get("address")}\nPreferred date: ${f.get("date")}\nGift message: ${f.get("message")||"None"}\nPayment preference: ${f.get("payment")}\n\nPlease confirm availability, delivery charges and payment details.`;
+if(STORE_PHONE==="91YOURNUMBER"){alert("Demo ready! First replace 91YOURNUMBER in the code with the store owner's WhatsApp number.");return}
+window.open(waUrl(text),"_blank","noopener");
+});
+const d=new Date();d.setMinutes(d.getMinutes()-d.getTimezoneOffset());document.getElementById("deliverydate").min=d.toISOString().split("T")[0];
+renderProducts();
 </script>
 </body>
 </html>
